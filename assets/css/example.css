@@ -1,0 +1,18 @@
+.container{
+    padding: 2rem;
+}
+
+.row > .col,
+.row > [class^=col-]{
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba( 243, 117, 32, .15);
+    border: 1px solid rgba( 243, 117, 32, .2);
+}
+
+.row > .col:hover,
+.row > [class^=col-]:hover{    
+    background-color: rgba( 243, 117, 32, .25);
+    border: 1px solid rgba( 243, 117, 32, .3);
+    cursor: pointer;
+}
