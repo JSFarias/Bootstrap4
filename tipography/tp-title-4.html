@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipography - Lists</title>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        
+        <ul type="circle">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+        <ul class="list-unstyled">
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li>Cum expedita placeat nulla ratione soluta praesentium voluptate.</li>
+            <li>Sllum minus consequatur quibusdam.</li>
+            <li>Placeat, velit corporis veritatis rem eos fuga modi aut dignissimos.</li>
+        </ul>
+
+        <ul class="list-inline"> <!--por algum motivo "list-inline-item" nao funcionou-->
+            <li class="list-inline-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit</li>
+            <li class="list-inline-item">Cum expedita placeat nulla ratione soluta praesentium voluptate</li>
+            <li class="list-inline-item">Sllum minus consequatur quibusdam</li>
+            <li class="list-inline-item">Placeat, velit corporis veritatis rem eos fuga modi aut dignissimos</li>
+        </ul>
+
+        <dl> <!--dt: definition list-->
+            <dt>Título 1</dt><!--dt: definition therm/title-->
+            <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim non eligendi eius blanditiis labore reprehenderit, nam alias. Laboriosam repudiandae amet itaque, excepturi blanditiis tempora, eveniet facere repellendus doloribus eaque commodi.</dd><!--dd: definition description-->
+
+            <dt>Título 2</dt>
+            <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim non eligendi eius blanditiis labore reprehenderit, nam alias. Laboriosam repudiandae amet itaque, excepturi blanditiis tempora, eveniet facere repellendus doloribus eaque commodi.</dd>
+        </dl>
+
+        <dl class="row">
+            <dt class="col-sm-2">Título 1</dt>
+            <dd class="col-sm-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim non eligendi eius blanditiis labore reprehenderit, nam alias. Laboriosam repudiandae amet itaque, excepturi blanditiis tempora, eveniet facere repellendus doloribus eaque commodi.</dd>
+
+            <dt class="col-sm-2">Título 1</dt>
+            <dd class="col-sm-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim non eligendi eius blanditiis labore reprehenderit, nam alias. Laboriosam repudiandae amet itaque, excepturi blanditiis tempora, eveniet facere repellendus doloribus eaque commodi.</dd>
+
+        </dl>
+        
+    </div>    
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
