@@ -11,6 +11,12 @@ header, nav, main{
     min-height: 10vh;
 }
 
+[class^=col-],
+.col{
+    background-color: #FFF;
+    border: 1px solid black;
+}
+
 nav, main{
     min-height: 82vh;
 }

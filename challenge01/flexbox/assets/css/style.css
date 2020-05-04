@@ -21,10 +21,14 @@ header{
 }
 
 section{
-    
+    min-height: 320px;
+    height: calc(100vh - (40px + 200px));
 }
-nav{
+.side-expanded,
+.side-collapsed{    
     background-color: #EDEDED;
+}
+.side-expanded{
     min-width: 170px;
     padding: 10px 0;
 }
@@ -36,6 +40,7 @@ nav>i{
     margin: 5px 15px;
     color: rgb(77, 77, 77);
 }
+
 
 main{
     background-color: #FFF;
