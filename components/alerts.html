@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alerts</title>
+    <link rel="stylesheet" href="../assets\css\bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="alert alert-success" role="alert">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, fugit repellat? A tempora unde aperiam.
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-secondary" role="alert">
+                    Training
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-primary" role="alert">
+                    Training
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="alert alert-danger" role="alert">
+                    Error!!!
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="alert alert-warning" role="alert">
+                    Error!!!
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info" role="alert">
+            Information!
+            <a href="https://youtube.com/solarfighters"> Solar Fighters</a>
+        </div>
+
+        <div class="alert alert-dark" role="alert">
+            <h4>Título</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sit fugit quibusdam laboriosam animi culpa similique! Fugit sequi animi architecto id nihil suscipit nostrum accusamus ratione ipsa asperiores, placeat dolorum?</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sit fugit quibusdam laboriosam animi culpa similique! Fugit sequi animi architecto id nihil suscipit nostrum accusamus ratione ipsa asperiores, placeat dolorum?</p>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iste enim dolores ab pariatur soluta expedita repellat. Illo odio mollitia dignissimos dolorem vero. Dignissimos, obcaecati laboriosam tenetur adipisci cumque voluptatem?
+            <button class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button>
+        </div>
+
+        <button id="btn-close-all" type="button">Fechar todos os alerts</button>
+
+    </div>
+
+    <script src="../assets\js\jquery-3.5.0.min.js"></script>
+    <script src="../assets\js\bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(()=>{
+            $('#btn-close-all').on('click', e=>{
+                $('.alert').alert('close');
+            });
+        });
+    </script>
+    
+</body>
+</html>
