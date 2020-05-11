@@ -13,90 +13,85 @@
 </head>
 <body>
 
-    <div class="container-fluid d-flex flex-row p-0">
-        
-        <section class="side-column">
-            <div class="list-group">
-
-               
-                <div class="list-group-item list-group-item-user">
-                    <span class="row-list-user d-flex justify-content-between">
-                        <a href="#" id="btn-list-user-photo">
-                            <img class="h-100" src="assets\imgs\contact.png" alt="avatar-photo">
-                        </a>
-                        <div class="row row-menu">
-                            <a href="#" class="col" id="btn-list-user-status">
-                                <i class="fas fa-circle-notch"></i></a>
-                            <a href="#" class="col" id="btn-list-user-msg">
-                                <i class="fas fa-comment-dots"></i></a>
-                            <a href="#" class="col" id="btn-list-user-menu">
-                                <i class="fas fa-ellipsis-v"></i></a>                      
-                        </div>
-                    </span>
-                </div>
-
-
-                <a href="#" class="list-group-item list-group-item-action" id="btn-row-list-contact-01">
-                    <span class="row-list-contact d-flex justify-content-between">
-                        <img class="h-100" src="assets\imgs\contact.png" alt="avatar-photo">
-                        <span class="flex-grow-1 mx-3">
-                            <div class="contact-name" id="contact-01-name">Jhon</div>
-                            <div class="contact-last-msg" id="contact-01-last-msg"><i class="fas fa-check-double mr-1"></i>bora lá...</div>
-                        </span>
-                        <span class="d-flex flex-column justify-content-center align-items-end row-stats ml-10">
-                            <div class="msg-hour" id="contact-01-msg-hour">19:20</div>
-                            <div class="row d-flex justify-content-center">                                
-                                
-                                <div class="col"><i class="fas fa-volume-off d-block"></i></div>
-                                <div class="col badge badge-success badge-pill" id="contact-01-msg-amount">3</div>
-                                <button type="button" class="col btn btn-link" id="btn-menu-row-stats"><i class="fas fa-chevron-down d-block"></i></button> 
-                                
-                            </div>                            
-                        </span>
-                    </span>
-                </a>
+    <div class="green-bg-top"></div>
+    <div class="container-fluid d-flex flex-column  p-0">
+        <main class="d-flex flex-row ">
+            <section class="side-column">
+                <div class="list-group">
                 
-                
-            </div>
-        </section>
-
-        <!--main-->
-        <section class="main flex-grow-1">
-            <div class="list-group">
-                <div class="list-group-item">
-                    <span class="row-list-user d-flex justify-content-between">
-                        <a href="#" id="btn-list-user-photo">
-                            <img class="h-100" src="assets\imgs\contact.png" alt="avatar-photo">
-                        </a>
-                        <span class="flex-grow-1 mx-3">
-                            <div class="contact-name" id="contact-01-name">Jhon</div>
-                            <div class="contact-last-msg" id="contact-01-last-msg"><i class="fas fa-check-double mr-1"></i>bora lá...</div>
+                    <div class="list-group-item list-group-item-user">
+                        <span class="row-list-user d-flex justify-content-between">
+                            <a href="#" id="btn-list-user-photo">
+                                <img class="h-100" src="assets\imgs\contact.png" alt="avatar-photo">
+                            </a>
+                            <div class="row row-menu">
+                                <a href="#" class="col" id="btn-list-user-status">
+                                    <i class="fas fa-circle-notch"></i></a>
+                                <a href="#" class="col" id="btn-list-user-msg">
+                                    <i class="fas fa-comment-dots"></i></a>
+                                <a href="#" class="col" id="btn-list-user-menu">
+                                    <i class="fas fa-ellipsis-v"></i></a>                      
+                            </div>
                         </span>
-                        <div class="row row-menu">
-                            <a href="#" class="col" id="btn-list-user-status">
-                                <i class="fas fa-search"></i></a>
-                            <a href="#" class="col" id="btn-list-user-msg">
-                                <i class="fas fa-paperclip"></i></a>
-                            <a href="#" class="col" id="btn-list-user-menu">
-                                <i class="fas fa-ellipsis-v"></i></a>                      
-                        </div>
-                    </span>
-                </div>
+                    </div>
 
-                <div class="text-field">
-
+                    <a href="#" class="list-group-item list-group-item-action" id="btn-row-list-contact-01">
+                        <span class="row-list-contact d-flex justify-content-between">
+                            <img class="h-100" src="assets\imgs\contact.png" alt="avatar-photo">
+                            <span class="flex-grow-1 mx-3">
+                                <div class="contact-name" id="contact-01-name">Jhon</div>
+                                <div class="contact-last-msg" id="contact-01-last-msg"><i class="fas fa-check-double mr-1"></i>bora lá...</div>
+                            </span>
+                            <span class="d-flex flex-column justify-content-center align-items-end row-stats ml-10">
+                                <div class="msg-hour" id="contact-01-msg-hour">19:20</div>
+                                <div class="row d-flex justify-content-center">                                
+                                    
+                                    <div class="col"><i class="fas fa-volume-off d-block"></i></div>
+                                    <div class="col badge badge-success badge-pill" id="contact-01-msg-amount">3</div>
+                                    <button type="button" class="col btn" id="btn-menu-row-stats"><i class="fas fa-chevron-down d-block"></i></button> 
+                                    
+                                </div>                            
+                            </span>
+                        </span>
+                    </a>                    
+                    
                 </div>
+            </section>
 
-                <div class="list-group-item d-flex align-items-center main-text-bar">
-                    <a href="#"><i class="far fa-grin-alt"></i></a> 
-                    <input class="flex-grow-1" type="text" placeholder="Digite uma mensagem">
-                    <a href="#"><i class="fas fa-microphone"></i></a> 
+            <!--main-->
+            <section class="flex-grow-1 text-main-column">
+                <div class="text-field list-group d-flex justify-content-between">
+                    <div class="list-group-item">
+                        <span class="row-list-user d-flex justify-content-between">
+                            <a href="#" id="btn-list-user-photo">
+                                <img class="h-100" src="assets\imgs\contact.png" alt="avatar-photo">
+                            </a>
+                            <span class="flex-grow-1 mx-3">
+                                <div class="contact-name" id="contact-01-name">Jhon</div>
+                                <div class="contact-last-msg" id="contact-01-last-msg"><i class="fas fa-check-double mr-1"></i>bora lá...</div>
+                            </span>
+                            <div class="row row-menu">
+                                <a href="#" class="col" id="btn-list-user-status">
+                                    <i class="fas fa-search"></i></a>
+                                <a href="#" class="col" id="btn-list-user-msg">
+                                    <i class="fas fa-paperclip"></i></a>
+                                <a href="#" class="col" id="btn-list-user-menu">
+                                    <i class="fas fa-ellipsis-v"></i></a>                      
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="list-group-item d-flex align-items-center main-text-bar">
+                        <a href="#"><i class="far fa-grin-alt"></i></a> 
+                        <input class="flex-grow-1" type="text" placeholder="Digite uma mensagem">
+                        <a href="#"><i class="fas fa-microphone"></i></a> 
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>            
+        </main>       
+        <p class="my-credits">Reproduction by Jhonatas da Silva Farias</p> 
 
     </div>
-
 
     <script src="../assets\js\jquery-3.5.0.min.js"></script>
     <script src="../assets\js\bootstrap.bundle.min.js"></script>
