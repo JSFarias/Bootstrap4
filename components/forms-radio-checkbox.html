@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms-radio-checkbox</title>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css">
+
+    <style>
+        form{
+            background-color: #eee;
+            padding: 10px;
+            border: #ccc 1px solid;
+            border-radius: 2px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <form action="">
+
+            <div class="form-check">
+                <input type="radio" name="gender" id="gender-m" class="form-check-input" value="M">
+                <label for="gender-m" class="form-check-label">Masculino</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="gender" id="gender-f" class="form-check-input" value="M">
+                <label for="gender-f" class="form-check-label">Feminino</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+
+        <hr>
+
+        <form action="">
+
+            <div class="form-check form-check-inline">
+                <input type="radio" name="gender" id="gender-m" class="form-check-input" value="M">
+                <label for="gender-m" class="form-check-label">Masculino</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="gender" id="gender-f" class="form-check-input" value="M">
+                <label for="gender-f" class="form-check-label">Feminino</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+
+        <form action="">
+
+            <div class="form-check">
+                <input type="checkbox" name="gender" id="gender-m" class="form-check-input" value="M">
+                <label for="gender-m" class="form-check-label">Masculino</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" name="gender" id="gender-f" class="form-check-input" value="M">
+                <label for="gender-f" class="form-check-label">Feminino</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" name="gender" id="gender-x" class="form-check-input" value="M">
+                <label for="gender-x" class="form-check-label">Outro</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown-items</title>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css">
+</head>
+<body>
+    <!--"disabled" usa-se de maneira diferente entre <button> e <a>-->
+    <div class="container">
+        
+        <div class="dropdown">
+            <button type="button" data-toggle="dropdown" class="btn btn-primary btn-sm dropdown-toggle">Menu</button>
+            <div class="dropdown-menu">
+
+                <small class="dropdown-item-text bg-light"><strong>LowPoly</strong></small>
+                <a href="#" class="dropdown-item">modeling</a>
+                <a href="#" class="dropdown-item">texturing</a>
+                <a href="#" class="dropdown-item disabled">animation</a>
+                
+                <div class="dropdown-divider"></div>
+
+                <h6 class="dropdown-header bg-light">HighPoly</h6>
+                <button href="#" class="dropdown-item">modeling</button>
+                <button href="#" class="dropdown-item">texturing</button>
+                <button href="#" class="dropdown-item" disabled>animation</button>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
