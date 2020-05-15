@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Custom</title>
+    <link rel="stylesheet" href="../../node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="../challenge03/mysolution/assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container mx-auto">
+        
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" name="accept" id="accept" class="custom-control-input">
+            <label for="accept" class="custom-control-label">Custom</label>
+        </div>
+
+        <hr>
+
+        <div class="custom-control custom-radio">
+            <input type="radio" name="circle" id="circle" class="custom-control-input">
+            <label for="circle" class="custom-control-label">Custom</label>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <label for="volume" class="d-flex justify-content-center">Volume</label>
+            <input type="range" min="0" max="10" step=".5" name="volume" id="volume" class="custom-range">
+        </div>
+
+        <hr>
+
+        <div class="col-6 col-sm form-group">
+            <label for="state">Estado</label>
+            <select id="state" name="state" class="custom-select">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+        </div>
+
+        <hr>
+
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="accept" id="switch" class="custom-control-input">
+            <label for="switch" class="custom-control-label">Custom</label>
+        </div>
+        
+    </div>
+
+
+    <script src="../../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script>
+        
+
+    </script>
+
+</body>
+</html>
