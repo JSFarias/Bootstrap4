@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navs-pills-tabs</title>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav class="nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Cursos</a>
+            <a href="#" class="nav-link">Bootstrap</a>
+        </nav>
+        <hr>
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Cursos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Bootstrap</a></li>
+        </ul>
+        <hr>
+
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Cursos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Bootstrap</a></li>
+        </ul>
+        <hr>
+
+        <nav class="nav nav-tabs">
+            <a href="#" class="nav-link active">Home</a>
+            <a href="#" class="nav-link">Cursos</a>
+            <a href="#" class="nav-link">Bootstrap</a>
+            <a href="#" class="nav-link disabled">Contato</a>
+        </nav>
+        <hr>
+
+        <nav class="nav nav-pills">
+            <a href="#" class="nav-link active">Home</a>
+            <a href="#" class="nav-link">Cursos</a>
+            <a href="#" class="nav-link">Bootstrap</a>
+            <a href="#" class="nav-link disabled">Contato</a>
+        </nav>
+        <hr>
+
+        <ul class="nav nav-tabs nav-fill">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">Cursos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Bootstrap</a></li>
+        </ul>
+        <hr>
+
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cursos</a>
+                <ul class="dropdown-menu ">
+                    <li class="dropdown-item"><a href="#">1</a></li>
+                    <li class="dropdown-item"><a href="#">2</a></li>
+                    <li class="dropdown-item"><a href="#">3</a></li>
+                </ul>
+
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+        </ul>
+        
+    </div>
+
+    
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

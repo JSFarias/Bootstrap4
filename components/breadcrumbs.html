@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumbs</title>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Home</li>
+            </ol>
+        </nav>
+
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="http://google.com">Home</a></li>
+                <li class="breadcrumb-item"><a href="http://google.com">Cursos</a></li>
+                <li class="breadcrumb-item active">Matemática</li>
+            </ol>
+        </nav>
+
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cursos</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item active">Matemática</a>
+                        <a href="#" class="dropdown-item">Português</a>
+                        <a href="#" class="dropdown-item">Física</a>
+                        <a href="#" class="dropdown-item">Química</a>
+                    </div>
+                </li>
+                <li class="breadcrumb-item active">Matemática</li>
+            </ol>
+        </nav>
+
+    </div>
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
