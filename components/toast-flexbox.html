@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toast</title>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="../challenge03\mysolution\assets\css\style.css">
+    <style>
+        
+    </style>
+</head>
+<body>    
+
+    
+       
+        <div aria-live="polit" aria-atomic="true" style="min-height: 100vh;" class="d-flex justify-content-center align-items-center">
+
+            <div class="toast m-2" id="toast-1">
+                <div class="toast-header bg-danger text-white">
+                    <strong class="mr-auto">Notificação</strong>
+                    <small>Agora</small>
+                    <button type="button" class="ml-2 mb-1 close btn btn-primary" data-dismiss="toast">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+        </div>
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+
+    <script>  
+
+        $(()=>{
+
+            $('#toast-1').toast({
+                delay: 5000,
+                autohide:false,
+                animation:true,
+            }).toast('show')
+
+        })
+
+    </script>
+    
+</body>
+</html>
