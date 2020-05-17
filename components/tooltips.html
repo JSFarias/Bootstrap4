@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltips</title>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="../challenge03\mysolution\assets\css\style.css">
+    <style>
+        
+    </style>
+</head>
+<body>    
+
+
+    <div class="container d-flex justify-content-center">
+
+        <button class="btn btn-primary m-2" data-toggle="tooltip" data-placement="left" title="Tooltip na esquerda" data-trigger="click" id="btn-tooltip-1">Tip</button>
+        <button class="btn btn-secondary m-2" data-toggle="tooltip" data-placement="top" title="Tooltip encima" data-trigger="hover" id="btn-tooltip-1">Tip</button>
+        <button class="btn btn-warning m-2" data-toggle="tooltip" data-placement="bottom" title="Tooltip em baixo" data-trigger="click" id="btn-tooltip-1">Tip</button>
+        <button class="btn btn-danger m-2" data-toggle="tooltip" data-placement="right" title="Tooltip na direita" data-trigger="hover" id="btn-tooltip-1">Tip</button>
+
+    </div>
+
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+
+    <script>      
+        $(()=>{
+
+            $('[data-toggle="tooltip"]').tooltip()
+
+        })
+    </script>
+    
+</body>
+</html>
