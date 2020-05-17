@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress</title>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="../challenge03\mysolution\assets\css\style.css">
+    <style>
+        .bar-height-1{
+            height: 25px;
+        }
+        .bar-height-2{
+            height: 50px;
+        }
+        .bar-height-3{
+            height: 2px;
+        }
+    </style>
+</head>
+<body>    
+
+    <div class="container">
+        
+        <div class="progress">
+            <div class="progress-bar w-25 bg-danger" role="progressbar">25%</div>
+        </div>
+
+        <hr>
+        <div class="progress bar-height-1">
+            <div class="progress-bar w-50 bg-primary" role="progressbar">50%</div>
+        </div>
+
+        <hr>
+        <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" id="progress">100%</div>
+        </div>
+
+        <hr>
+        <div class="progress bar-height-2">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" id="progress2">100%</div>
+        </div>
+
+        <hr>
+        <div class="progress bar-height-3">
+            <div class="progress-bar bg-success" role="progressbar" id="progress3"></div>
+        </div>
+
+    </div>    
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+
+    <script>  
+
+        $(()=>{
+
+            window.progressInterval2 =  setInterval(()=>{
+                let progress2 = $('#progress2').css('width').replace('px', '') 
+                progress2 = parseFloat(progress2) + .05
+                
+                if(progress2 >= 100){                
+                    clearInterval(progressInterval2)
+                }
+                $('#progress2').css('width', progress2 + '%')
+                $('#progress3').css('width', progress2 + '%')
+            }, 1000)
+           
+           window.progressInterval =  setInterval(()=>{
+                let progress = $('#progress').css('width').replace('px', '')
+                progress = parseInt(progress) + 1
+            
+                if(progress >= 100){
+                    clearInterval(progressInterval)
+                }
+                $('#progress').css('width', progress + '%')
+           }, 1000)
+
+           
+
+        })
+
+    </script>
+    
+</body>
+</html>

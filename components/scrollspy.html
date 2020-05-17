@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollspy</title>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="../challenge03\mysolution\assets\css\style.css">
+    <style>
+        #scrollspy-content{
+            position: relative;
+            height: calc(100vh - 200px);
+            overflow-y: auto;   
+            scroll-behavior: smooth;         
+        }
+        h2{
+            margin-top: 50px;
+        }
+        
+    </style>
+</head>
+<body>    
+
+    <div class="container">
+        
+        <nav id="navbar" class="navbar navbar-light bg-light">
+            <a href="" class="navbar-brand">Jhonatas</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="#first" class="nav-link">First</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#second" class="nav-link">Second</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#third" class="nav-link">Third</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="scrollspy-content" data-spy="scroll" data-target="#navbar" data-offset="0">
+            <h2 id="first">Título 1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+
+            <h2 id="second">Título 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+
+            <h2 id="third">Título 3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus cumque laborum non enim quod natus excepturi quam amet ipsam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas soluta maxime expedita, officia quisquam nihil modi veniam pariatur..</p>
+        </div>
+
+    </div>    
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+
+    <script>  
+
+        $(()=>{
+
+            
+
+        })
+
+    </script>
+    
+</body>
+</html>

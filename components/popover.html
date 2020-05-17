@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination</title>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="../challenge03\mysolution\assets\css\style.css">
+    <style>
+        .rounded-circle{
+            width: 40px;
+            height: 40px;
+            padding: 0px;
+        }
+        .bg-secondary{            
+            width: 100px;
+            text-align: center;
+            cursor: help;
+        }
+    </style>
+</head>
+<body>    
+
+    <div class="container">
+        
+        <button type="button" class="btn btn-primary btn-lg d-block m-auto" data-toggle="popover"
+        data-content="Conteúdo do popover">Popover btn</button>
+
+        <hr>
+        <button type="button" class="btn btn-outline-secondary btn-lg rounded-circle d-block m-auto" data-toggle="popover"
+        data-content="Conteúdo do popover" title="Título">?</button>
+
+        <hr>
+        <button type="button" class="btn btn-outline-secondary btn-lg rounded-circle d-block m-auto" data-toggle="popover"
+        data-content="Conteúdo do popover" data-placement="left" title="Título">?</button>
+
+        <hr>
+        <button type="button" class="btn btn-outline-secondary btn-lg rounded-circle d-block m-auto" data-toggle="popover"
+        data-content="Conteúdo do popover" data-trigger="focus" data-placement="top" title="Título">?</button>
+
+        <hr>
+        <button type="button" class="btn btn-outline-secondary btn-lg rounded-circle d-block m-auto" data-toggle="popover"
+        data-content="Conteúdo do popover" data-trigger="hover" data-placement="bottom" title="Título">?</button>
+
+        <hr>
+        <div class="d-block m-auto bg-secondary rounded text-light" data-toggle="popover"
+        data-content="Conteúdo do popover" data-trigger="hover" data-placement="left" title="Título">info</div>
+
+        <hr>
+        <button type="button" class="btn btn-danger btn-lg rounded-circle d-block m-auto" id="btn-click">!</button>
+
+    </div>    
+
+    <script src="../node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+
+    <script>  
+
+        $(()=>{
+            $('[data-toggle="popover"').popover()
+
+            $('#btn-click').on('click', e=>{
+                $('[data-toggle="popover"').popover('toggle')
+            })
+        })
+
+    </script>
+    
+</body>
+</html>
