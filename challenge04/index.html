@@ -10,8 +10,8 @@
 </head>
 <body>  
 
-    <nav class="px-2" id="navbar-top">
-        <div class="d-flex align-items-center py-2">
+    <nav id="navbar-top">
+        <div class="d-flex align-items-center p-2">
             <button class="mobile mr-2 bg-transparent border-0" data-toggle="collapse" data-target="#navbar" type="button">
                 <i class="fas fa-bars text-white"></i>
             </button>
@@ -20,7 +20,7 @@
             </a>
 
             <div class="nonmobile" id="navbar">    
-                <a href="#">Navegar</a>        
+                <a href="#" class="active">Navegar</a>        
                 <a href="#">Infantil</a>  
             </div>
             
@@ -37,17 +37,32 @@
         <div class="collapse navbar-collapse mobile" id="navbar">
             <ul class="list-unstyled m-0 px-3 py-3">
                 <li class="mb-2">
-                    <a href="#">Navegar</a>
+                    <a href="#" class="mr-4 d-flex flex-row align-items-center">
+                        <img class="mr-2" src="https://api.adorable.io/avatars/400/abott@adorable.io.png" alt="Netflix logo">
+                        <div class="d-flex flex-column">
+                            <span class="ml-1 font-weight-bold">Jhonatas</span>
+                            <small class="ml-1">Trocar de perfil</small>
+                        </div>
+                    </a>
                 </li>
                 <li class="mb-2">
-                    <a href="#">Infantil</a>
+                    <a href="#">Conta</a>
                 </li>
-                <hr class="my-3">
-                <li>
-                    <a href="#" class="mr-4">
-                        <img src="https://api.adorable.io/avatars/400/abott@adorable.io.png" alt="Netflix logo">
-                        <span class="ml-1">Jhonatas</span>
-                    </a>
+                <li class="mb-2">
+                    <a href="#">Sair do Netflix</a>
+                </li>
+                <hr class="my-3 bg-dark">                
+                <li class="mb-2">
+                    <a href="#" class="active">Início</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#">Minha lista</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#">Séries de ação</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#">Filmes</a>
                 </li>
             </ul>
         </div>
@@ -57,9 +72,11 @@
 
         <header>            
                 <div class="card">
-                    <img class=" card-img ml-auto" src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="avengers-ultimate-img">
+                    <video autoplay loop class="card-video ml-auto" src="assets\videos\Marvel_Studios_Avengers_Endgame_To_the_End.mp4" poster="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg">
+                    </video>                    
+                    
                     <div class="gradient card-img-overlay"></div>
-                    <div class="card-img-overlay">
+                    <div class="header-text card-img-overlay">
                         <h2 class="h6 text-white">Vingadores: Ultimato</h2>
                         <p class="header-date">2019 12 182min</p>
                         <p class="nonmobile header-sinopse">
@@ -103,6 +120,36 @@
             </div>
             <div class="film-row-list">
                 <h3>Continuar assistindo como Jhonatas</h3>
+                <div class="film-row d-flex flex-row">
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                </div>
+            </div>
+            <div class="film-row-list">
+                <h3>Séries</h3>
+                <div class="film-row d-flex flex-row">
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                    <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
+                </div>
+            </div>
+            <div class="film-row-list">
+                <h3>Comédias</h3>
                 <div class="film-row d-flex flex-row">
                     <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>
                     <a href="" class="film-thumbnail"><img src="https://portalrapmais.com/wp-content/uploads/2019/07/vingadores-ultimato-vendas-dos-ingressos-comecam-a-ser-divulgadas_f.jpg" alt="img"></a>

@@ -18,7 +18,11 @@ a:hover{
     min-height: 40px;
 }
 #navbar-top img{
-    height: 25px;
+    height: 30px;
+}
+#navbar .active{
+    font-weight: bold;
+    color: #E30F19;
 }
 
 .card{
@@ -35,7 +39,7 @@ a:hover{
 }
 .card .header-sinopse{
     font-size: 14px;
-    width: 300px;
+    width: 340px;
 }
 .card button{
     color: white;
@@ -46,8 +50,12 @@ a:hover{
 }
 .card-img{
     border-radius: 0px;
-    width: 100vw;
+    width: 80vw;
     max-width: 1000px;
+}
+.card-video{
+    border-radius: 0px;
+    width: 95vw;
 }
 
 header .gradient{
@@ -142,5 +150,37 @@ footer a{
     }
     form{
         width: 25vw;    
+    }
+    #navbar-top{  
+        width: 100vw;
+        position: fixed;
+        z-index: 10;
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    }
+    .card h2{
+        margin-top: 30px;
+    }
+    .card .header-sinopse{
+        line-height: 18px;
+        font-size: 14px;
+        width: 360px;
+    }
+}
+
+@media(min-width: 1024px){    
+    .card .header-text{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .card .header-sinopse{
+        font-size: 15px;
+        width: 360px;
+        line-height: 27px;
+    }
+    footer a{
+        font-size: 16px;
     }
 }
