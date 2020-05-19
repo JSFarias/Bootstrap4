@@ -1,11 +1,21 @@
 body{
     color: white;
+    background-color: #1B1B1B;
 }
 
+a{    
+    color: white;
+}
+a:hover{    
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+}
+#navbar a{
+    margin-right: 20px;
+}
 #navbar-top{
     background-color: #1B1B1B;    
     min-height: 40px;
-    padding-top: 7px;
 }
 #navbar-top img{
     height: 25px;
@@ -18,11 +28,14 @@ body{
 .card h2,
 .card p{
     color: rgb(197, 197, 197);
-    filter: drop-shadow(1px 1px 2px black);
+    filter: drop-shadow(1px 1px 1px black);
+}
+.card .header-date{
+    font-size: 13px;
 }
 .card .header-sinopse{
     font-size: 14px;
-    width: 400px;
+    width: 300px;
 }
 .card button{
     color: white;
@@ -33,18 +46,18 @@ body{
 }
 .card-img{
     border-radius: 0px;
+    width: 100vw;
     max-width: 1000px;
-
 }
 
 header .gradient{
     height: 100%;
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
 
-    background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
@@ -54,15 +67,14 @@ header .gradient{
 }
 
 .film-row{
-    overflow-x: scroll;
-    
-}
-main .film-row-list{
-    padding: 10px 0px;
+    overflow-x: scroll;    
 }
 
-section{
-    background-color: #1B1B1B;
+main .film-row-list{
+    padding: 8px 0px;
+}
+
+main{    
     padding-left: 10px;
 }
 
@@ -72,14 +84,15 @@ main h3{
 }
 
 form{
-    width: 100px;
+    width: 45vw;    
 }
 form > input{
     width: inherit;
     background-color: #1B1B1B;
-    padding: 0px 5px;
+    padding: 0px 5px;    
     border-radius: 1px;
     border: 1px solid gray;
+    color: #999898;
 }
 
 .mobile{
@@ -91,6 +104,8 @@ form > input{
 
 footer{
     background-color: #1B1B1B;
+    padding-bottom: 5px;
+    height: 90px;
 }
 footer li{
     line-height: 16px;
@@ -101,11 +116,31 @@ footer a{
     text-decoration: none;
 }
 
-@media(min-width: 786px){
+@media(min-width: 504px){
+    .card-img{
+        width: 85vw;
+    }
+    footer{
+        height: 45px;
+    }
+    footer .navbar-nav{
+        width: 100%;        
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    section{
+        height: calc(100vh - (40px + 45px));
+    }
+}
+
+@media(min-width: 768px){
     .mobile{
         display: none;
     }
     .nonmobile{
         display: block;
+    }
+    form{
+        width: 25vw;    
     }
 }
